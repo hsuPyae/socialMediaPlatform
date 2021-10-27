@@ -1,0 +1,8 @@
+{%extends 'blog/base_blog.html'%}
+{%block title%}
+{{post.title}} {{block.super}}
+{%endblock%}
+{%block content%}
+    <h5 class="mt-5">{{post.title}}</h5>
+    <p class="card-text">{{post.body}}</p>   
+{%endblock%}
