@@ -3,7 +3,7 @@
 Index Page {{block.super}}
 {%endblock%}
 {%block content%}
-    {%for post in posts%}
+    {%for post in page.object_list%}
         {%include 'blog/includes/post_card_templates.html'%}
     {%endfor%}
 {%endblock%}
